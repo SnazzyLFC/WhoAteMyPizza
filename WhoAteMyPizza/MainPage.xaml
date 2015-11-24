@@ -1,0 +1,32 @@
+﻿<Page
+    x:Class="WhoAteMyPizza.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:WhoAteMyPizza"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBlock Text= "Who ate my pizza?" HorizontalAlignment="Center" Width="auto" Height="20px" Margin="122,76,113,544"/>
+        <Canvas x:Name="pizzatoeat" Width="180" Height="180" Margin="86,122,94,338">
+            <Image x:Name="pizza0" Source="Assets/PizzaImg/0.png" HorizontalAlignment="Center" Height="90px" Width="90px" Canvas.Left="90"/>
+            <Image x:Name="pizza1" Source="Assets/PizzaImg/1.png" HorizontalAlignment="Center" Height="90px" Width="90px" Canvas.Left="90"/>
+            <Image x:Name="pizza2" Source="Assets/PizzaImg/2.png" HorizontalAlignment="Center" Height="90px" Width="90px" Canvas.Top="90" Canvas.Left="90"/>
+            <Image x:Name="pizza3" Source="Assets/PizzaImg/3.png" HorizontalAlignment="Center" Height="90px" Width="90px" Canvas.Top="90" Canvas.Left="90"/>
+            <Image x:Name="pizza4" Source="Assets/PizzaImg/4.png" HorizontalAlignment="Center" Height="90px" Width="90px" Canvas.Top="90"/>
+            <Image x:Name="pizza5" Source="Assets/PizzaImg/5.png" HorizontalAlignment="Center" Height="90px" Width="90px" Canvas.Top="90"/>
+            <Image x:Name="pizza6" Source="Assets/PizzaImg/6.png" HorizontalAlignment="Center" Height="90px" Width="90px"/>
+            <Image x:Name="pizza7" Source="Assets/PizzaImg/7.png" HorizontalAlignment="Center" Height="90px" Width="90px"/>
+        </Canvas>
+        <Button x:Name="pizzatoclick" Click="pizzatoclick_Click" Height="100" Width="150" HorizontalAlignment="Center" Margin="105,335,105,205">
+            <Button.Template>
+                <ControlTemplate>
+                    <Image Source="Assets/PizzaImg/pizza.png"/>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+
+    </Grid>
+</Page>
