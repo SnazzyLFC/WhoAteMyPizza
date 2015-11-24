@@ -20,21 +20,11 @@ namespace WhoAteMyPizza
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class MainPage : Page
+    public sealed partial class IdSelecting : Page
     {
-        public MainPage()
+        public IdSelecting()
         {
             this.InitializeComponent();
-        }
-
-        private void StartButton_Click(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(CreatingPizza));
-        }
-
-        private void JoinButton_Click(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(IdSelecting));
         }
     }
 }

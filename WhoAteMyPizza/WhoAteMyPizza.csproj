@@ -99,7 +99,17 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Classes\Pizza.cs" />
     <Compile Include="Classes\PizzaManager.cs" />
+    <Compile Include="CreatingPizza.xaml.cs">
+      <DependentUpon>CreatingPizza.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EatingPage.xaml.cs">
+      <DependentUpon>EatingPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="IdSelecting.xaml.cs">
+      <DependentUpon>IdSelecting.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -135,9 +145,21 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="MainPage.xaml">
+    <Page Include="CreatingPizza.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EatingPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="IdSelecting.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
