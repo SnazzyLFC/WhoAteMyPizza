@@ -9,10 +9,10 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <TextBlock Text= "Who ate my pizza?" HorizontalAlignment="Center" Width="auto" Height="20px" Margin="122,76,113,544"/>
-        <Button x:Name="StartButton" Click="StartButton_Click" Margin="115,228,0,367" Width="132" Height="45">
+        <Button x:Name="StartButton" Click="StartButton_Click" HorizontalAlignment="Center" Margin="115,225,113,370" Width="132" Height="45">
             Create new pizza
         </Button>
-        <Button x:Name="JoinButton" Click="JoinButton_Click" Margin="115,293,0,302" Width="132" Height="45">
+        <Button x:Name="JoinButton" Click="JoinButton_Click" HorizontalAlignment="Center" Margin="115,318,113,277" Width="132" Height="45">
             Join to pizza
         </Button>
     </Grid>

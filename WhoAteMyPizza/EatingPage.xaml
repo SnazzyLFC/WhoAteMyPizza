@@ -26,6 +26,7 @@
                 </ControlTemplate>
             </Button.Template>
         </Button>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="20" Margin="70,19,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="56"/>
 
 
     </Grid>

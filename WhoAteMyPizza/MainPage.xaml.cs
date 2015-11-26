@@ -34,7 +34,7 @@ namespace WhoAteMyPizza
 
         private void JoinButton_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(IdSelecting));
+            this.Frame.Navigate(typeof(EatingPage));
         }
     }
 }

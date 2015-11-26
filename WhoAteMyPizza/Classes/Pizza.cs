@@ -6,9 +6,14 @@ using System.Threading.Tasks;
 
 namespace WhoAteMyPizza.Classes
 {
-    class Pizza
+        public class Pizza
     {
-        public float cost { get; set; }
+        public Pizza(double cost)
+        {
+            this.cost = cost;
+            //this.numberOfPeople = numberOfPeople;
+        }
+        public double cost { get; set; }
         public int numberOfPeople { get; set; }
     }
 
