@@ -28,14 +28,6 @@ namespace WhoAteMyPizza.Classes
         //        return -1;
         //    }
         //}
-        public int Eat()
-        {
-            if (NumberOfPieces < 8)
-            {
-                return this.NumberOfPieces++;
-            }
-            else
-                return -1;
-        }
+
     }
 }

@@ -54,6 +54,7 @@ namespace WhoAteMyPizza
         {
             PizzaButton.IsEnabled = argument;
             DeliveryButton.IsEnabled = argument;
+            StartButton.IsEnabled = argument;
         }
         private void CheckIfEmpty()
         {
@@ -106,7 +107,10 @@ namespace WhoAteMyPizza
         {
             //Pizza myPizza = new Pizza(Convert.ToDouble(costBox.Text));
             Pizza myPizza = new Pizza(Convert.ToDouble(costBox.Text));
-            this.Frame.Navigate(typeof(EatingPage), myPizza);
+            Admin Eater = new Admin();
+            Eater.myPizza = myPizza;
+            List<object> Parameters = new List<object> { Eater, myPizza };
+            this.Frame.Navigate(typeof(EatingPage), Parameters);
         }
 
         //private void CostBox_TextChanged(object sender, TextChangedEventArgs e)

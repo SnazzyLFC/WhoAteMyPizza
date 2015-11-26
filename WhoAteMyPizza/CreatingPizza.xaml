@@ -14,12 +14,13 @@
         <TextBlock x:Name="DeliveryBox" Height="50" Width="120" TextAlignment="Center" HorizontalAlignment="Center" Text="0" Margin="120,311,120,279"/>
         <TextBlock Height="50" Width="120" TextAlignment="Center" HorizontalAlignment="Center" FontSize="24" Text="Total cost:" Margin="120,404,120,186"/>
         <TextBlock Text="0" x:Name="CostBox" Height="50" Width="120" HorizontalAlignment="Center" FontSize="20" TextAlignment="Center" Margin="120,454,120,136"/>
+        <Button x:Name="StartButton" Content="Go to the queue" Height="50" Width="140" Click="Button_Click_1" HorizontalAlignment="Center" Margin="120,504,120,86"/>
         <Canvas x:Name="CostTaker" Height="535" Width="268" VerticalAlignment="Center" HorizontalAlignment="Center" Background="Honeydew" Visibility="Collapsed" Margin="43,62,49,43">
             <TextBox x:Name="UserCost" Text="0.00" VerticalAlignment="Top" HorizontalAlignment="Center" Height="50" Width="120" Foreground="AliceBlue" Canvas.Left="81" Canvas.Top="195"></TextBox>
             <Button x:Name="Button" Content="OK" VerticalAlignment="Bottom" HorizontalAlignment="Center" Height="30" Width="50" Click="Button_Click" Canvas.Left="118" Canvas.Top="277"></Button>
             <Button x:Name="Button2" Content="OK" VerticalAlignment="Bottom" HorizontalAlignment="Center" Height="30" Width="50" Click="Button2_Click" Canvas.Left="118" Canvas.Top="277" Visibility="Collapsed"></Button>
         </Canvas>
-        <Button Content="Go to the queue" Height="50" Width="120" Click="Button_Click_1" HorizontalAlignment="Center" Margin="120,504,120,86"/>
+        
     </Grid>
 </Page>
  

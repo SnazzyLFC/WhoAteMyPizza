@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using WhoAteMyPizza.Classes;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -25,6 +26,18 @@ namespace WhoAteMyPizza
         public IdSelecting()
         {
             this.InitializeComponent();
+        }
+
+        private void Button2_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Eater Eater = new Eater();
+            List<object> Param = new List<object>() { Eater };
+            Frame.Navigate(typeof(EatingPage), Param);
         }
     }
 }

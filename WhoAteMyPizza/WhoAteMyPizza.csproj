@@ -99,8 +99,11 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Classes\Admin.cs" />
+    <Compile Include="Classes\Eater.cs" />
     <Compile Include="Classes\Pizza.cs" />
     <Compile Include="Classes\PizzaManager.cs" />
+    <Compile Include="Classes\User.cs" />
     <Compile Include="CreatingPizza.xaml.cs">
       <DependentUpon>CreatingPizza.xaml</DependentUpon>
     </Compile>
